@@ -1,31 +1,16 @@
 ﻿namespace BuildingAComputer;
 using System;
-public class IntelI5 : Components
+public class CPUIs : Components
 {
-    public string model = "Intel I5"; 
-    public int numberOfCores = 6;
-    public int clockFrequencyMHz = 2900;
+    public virtual string model { get; }
+    public virtual int numberOfCores { get; }
+    public virtual int clockFrequencyMHz { get; }
     
     public override void CPU()
     {
         base.CPU();
         Console.WriteLine($"    model: {model}");
-        Console.WriteLine($"    number of cores: {numberOfCores}");
-        Console.WriteLine($"    clock frequency, MHz: {clockFrequencyMHz}");
-    }
-    
-};
-
-public class AMD : Components
-{
-    public string model = "AMD ryzen 5";
-    public int numberOfCores = 6;
-    public int clockFrequencyMHz = 3600;
-    public override void CPU()
-    {
-        base.CPU();
-        Console.WriteLine($"    model: {model}");
-        Console.WriteLine($"    number of cores: {numberOfCores}");
-        Console.WriteLine($"    clock frequency, MHz: {clockFrequencyMHz}");
+        Console.WriteLine($"    numberOfCores: {numberOfCores}");
+        Console.WriteLine($"    clockFrequencyMHz: {clockFrequencyMHz}");
     }
 }

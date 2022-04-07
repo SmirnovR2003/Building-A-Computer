@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Building_A_Computer
 {
-    public class Crucial8Gb : Components
+    public class RAMIs : Components
     {
-        public string model = "Crucial CT8G4DFRA266";
-        public int memorySizeGb = 8;
-        public string memoryType = "DDR4";
+        public virtual string model { get; }
+        public virtual int memorySizeGb { get; }
+        public virtual string memoryType { get; }
         public override void RAM()
         {
             base.RAM();
@@ -20,19 +20,4 @@ namespace Building_A_Computer
             Console.WriteLine($"    memory Type: {memoryType}");
         }
     }
-
-    public class PatriotSignature : Components
-    {
-        public string model = "Patriot Signature PSD48G266681";
-        public int memorySizeGb = 8;
-        public string memoryType = "DDR4";
-        public override void RAM()
-        {
-            base.RAM();
-            Console.WriteLine($"    model: {model}");
-            Console.WriteLine($"    memory Size, Gb: {memorySizeGb}");
-            Console.WriteLine($"    memory Type: {memoryType}");
-        }
-    }
-    
 }

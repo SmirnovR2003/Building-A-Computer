@@ -1,13 +1,11 @@
-﻿
-
-namespace BuildingAComputer;
+﻿namespace BuildingAComputer;
 public class Components : IChooseComputer
 {
-
     public virtual void CPU()
     {
         Console.WriteLine("CPU info:");
     }
+
     public virtual void MotherBord()
     {
         Console.WriteLine("Motherboard info:");

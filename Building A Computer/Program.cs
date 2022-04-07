@@ -1,4 +1,8 @@
 ﻿using Building_A_Computer;
+using Building_A_Computer.CPUModels;
+using Building_A_Computer.MotherBordModels;
+using Building_A_Computer.RAMModels;
+using Building_A_Computer.VideoCardModels;
 
 namespace BuildingAComputer;
 public class Program
@@ -14,7 +18,6 @@ public class Program
              new Crucial8Gb(),
 
         };
-        
         components[0].CPU();
         Console.WriteLine();
         components[1].MotherBord();
